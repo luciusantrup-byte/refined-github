@@ -1,0 +1,20 @@
+# CLICKER GAME v1.0 - Python Edition
+score = 0
+
+def add_point():
+    global score
+    score = score + 1
+    print(f"Score: {score}")
+
+# Main game loop
+print("=== PYTHON CLICKER GAME ===")
+print("Made by Lucius")
+print("Press ENTER to click! (Type 'quit' to exit)")
+
+while True:
+    user_input = input(">>> ")
+    
+    if user_input.lower() == 'quit':
+        break
+    else:
+        add_point()
